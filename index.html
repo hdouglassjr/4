@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Right Column</title>
+    <style>
+        .fixed-div {
+            position: fixed;
+            top: 50px;
+            /* Adjust this value as needed to set the fixed position from the top */
+            left: 200px;
+            /* Adjust this value as needed to set the fixed position from the left */
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            /* Ensure the fixed div stays on top of other content */
+        }
+
+        .long-page-content {
+            /* Add some padding or margin to the top to ensure content isn't overlapped by the fixed div */
+            padding-top: 100px;
+            width: 100px;
+            /* Adjust this value to match the height of your fixed div */
+        }
+    </style>
+
+<body>
+
+    <div class="fixed-div">
+        This is the fixed div. It will stay fixed on the screen while scrolling.
+    </div>
+
+    <!-- Your long page content goes here -->
+    <div class="long-page-content">
+        <!-- Content goes here -->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nisi, eligendi optio nostrum omnis modi fuga
+        odio, fugiat quis amet laborum a aliquid recusandae voluptas sint praesentium officia qui vitae!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque rerum dolores saepe exercitationem dolor
+        adipisci. Voluptatum soluta quam quasi veritatis fuga! Eos sint numquam, asperiores vitae sunt optio aspernatur.
+        Sed.
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corporis culpa numquam, ducimus illum vero,
+            minus debitis cumque a quas aperiam ut non perspiciatis consequuntur sunt sit. Ab, nisi deserunt!
+        </p>
+    </div>
+
+</body>
+
+</html>
